@@ -1,0 +1,57 @@
+[
+    {
+        "nombre": "Manuel Guillen",
+        "edad": 20,
+        "promedio": 8
+    },
+    {
+        "nombre": "Juan Perez",
+        "edad": 22,
+        "promedio": 7
+    },
+    {
+        "nombre": "Maria Lopez",
+        "edad": 19,
+        "promedio": 5
+    },
+    {
+        "nombre": "Carlos Sanchez",
+        "edad": 21,
+        "promedio": 6
+    },
+    {
+        "nombre": "Ana Torres",
+        "edad": 20,
+        "promedio": 9
+    },
+    {
+        "nombre": "Luis Ramirez",
+        "edad": 23,
+        "promedio": 4
+    },
+    {
+        "nombre": "Sofia Gonzalez",
+        "edad": 18,
+        "promedio": 10
+    },
+    {
+        "nombre": "Diego Fernandez",
+        "edad": 22,
+        "promedio": 3
+    },
+    {
+        "nombre": "Valentina Morales",
+        "edad": 21,
+        "promedio": 7
+    },
+    {
+        "nombre": "Javier Herrera",
+        "edad": 20,
+        "promedio": 6
+    },
+    {
+        "nombre": "Javier trujillo",
+        "edad": 20,
+        "promedio": 0
+    }
+]
