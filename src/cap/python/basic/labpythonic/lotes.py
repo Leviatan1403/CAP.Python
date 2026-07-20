@@ -1,4 +1,10 @@
-def generador_por_lotes(iterable, tamano_lote):
+from collections.abc import Iterator
+
+
+def generadorporlotes[T](
+    iterable: list[T],
+    tamano_lote: int,
+) -> Iterator[list[T]]:
     """
     Agrupa un iterable en lotes (chunks) del tamaño especificado.
     """
@@ -13,6 +19,6 @@ def generador_por_lotes(iterable, tamano_lote):
 
 
 # Ejemplo de uso procesando lotes de 3 elementos:
-datos = range(1, 11)
-for lote in generador_por_lotes(datos, tamano_lote=3):
+datos: list[int] = list(range(1, 11))
+for lote in generadorporlotes(datos, tamano_lote=3):
     print(f"Procesando lote: {lote}")

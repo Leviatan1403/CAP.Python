@@ -1,9 +1,9 @@
-from io import open
+# from io import open
 import json
 import os
 import pathlib
 
-from funciones.filtroAlumnos import filtroalumnos
+from cap.python.basic.funciones.filtro_alumnos import filtro_alumnos
 
 # Obtiene la ruta de la carpeta del script actual
 carpeta_actual = pathlib.Path(__file__).parent
@@ -25,9 +25,9 @@ for archivo in contenido:
 
     else:
         ruta = archivo_ruta / archivo
-        with open(ruta, "r", encoding="utf-8") as archivo_json:
+        with open(ruta, encoding="utf-8") as archivo_json:
             datos = json.load(archivo_json)
-            resultado = filtroalumnos(list(datos))
+            resultado = filtro_alumnos(list(datos))
             for alumno in resultado:
                 if alumno.get("grupo") == "A":
                     print(

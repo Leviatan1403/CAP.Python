@@ -1,4 +1,4 @@
-def filtroalumnos(alumnos: list):
+def filtro_alumnos(alumnos: list) -> list:
     for alumno in alumnos:
         try:
             if alumno.get("promedio") == 0:
@@ -10,7 +10,7 @@ def filtroalumnos(alumnos: list):
     return alumnos
 
 
-def assigmentgroup(alumno: dict):
+def assigmentgroup(alumno: dict) -> dict:
     match alumno:
         case {"promedio": a} if a > 8:
             alumno["grupo"] = "A"
