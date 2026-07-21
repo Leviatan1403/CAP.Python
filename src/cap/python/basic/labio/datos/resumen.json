@@ -1,0 +1,9 @@
+{
+    "fecha": "2026-07-20T15:45:00",
+    "ventas": 6,
+    "productos": 10,
+    "ingreso_total": 32050,
+    "ticket_promedio": 5341.67,
+    "producto_mas_vendido": "Mouse",
+    "categoria_mayor_ingreso": "Computadoras"
+}

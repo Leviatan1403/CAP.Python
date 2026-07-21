@@ -1,0 +1,6 @@
+id,fecha,producto,categoria,cantidad,precio
+1,2026-07-01,Laptop,Computo,2,15000
+2,2026-07-01,Mouse,Accesorios,5,350
+3,2026-07-02,Monitor,Pantallas,3,4200
+4,2026-07-02,Teclado,Accesorios,4,650
+5,2026-07-03,Laptop,Computo,1,15000

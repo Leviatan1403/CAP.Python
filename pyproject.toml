@@ -8,6 +8,8 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "pyyaml>=6.0.3",
+    "tzdata>=2026.3",
 ]
 
 [tool.poetry]

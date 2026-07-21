@@ -1,0 +1,31 @@
+2026-07-20 20:06:04,251 | INFO | main | =================================
+2026-07-20 20:06:04,251 | INFO | main | Inicio del procesamiento de ventas
+2026-07-20 20:06:04,252 | ERROR | main | Archivo no encontrado: No existe el archivo de entrada: D:\Documentos\WorkSpaceServer\Capacitacion Python\cap.python\src\cap\python\basic\labio\data\ventas.csv
+Traceback (most recent call last):
+  File "D:\Documentos\WorkSpaceServer\Capacitacion Python\cap.python\src\cap\python\basic\labio\app\main.py", line 44, in ejecutar
+    validar_rutas()
+    ~~~~~~~~~~~~~^^
+  File "D:\Documentos\WorkSpaceServer\Capacitacion Python\cap.python\src\cap\python\basic\labio\app\rutas.py", line 26, in validar_rutas
+    raise FileNotFoundError(
+        f"No existe el archivo de entrada: {CSV_FILE}"
+    )
+FileNotFoundError: No existe el archivo de entrada: D:\Documentos\WorkSpaceServer\Capacitacion Python\cap.python\src\cap\python\basic\labio\data\ventas.csv
+2026-07-20 20:06:04,254 | INFO | main | Fin del procesamiento
+2026-07-20 20:06:04,254 | INFO | main | =================================
+2026-07-20 20:07:55,983 | INFO | main | =================================
+2026-07-20 20:07:55,984 | INFO | main | Inicio del procesamiento de ventas
+2026-07-20 20:07:55,984 | DEBUG | main | Rutas validadas correctamente
+2026-07-20 20:07:55,984 | INFO | procesador | Iniciando lectura del archivo CSV: D:\Documentos\WorkSpaceServer\Capacitacion Python\cap.python\src\cap\python\basic\labio\datos\ventas.csv
+2026-07-20 20:07:55,984 | INFO | procesador | CSV leído correctamente. Registros válidos: 5
+2026-07-20 20:07:55,985 | INFO | main | Ventas cargadas correctamente: 5
+2026-07-20 20:07:55,985 | INFO | procesador | Calculando métricas de ventas
+2026-07-20 20:07:55,985 | DEBUG | procesador | Métricas calculadas: {'ventas_procesadas': 5, 'productos_diferentes': 4, 'unidades_vendidas': 15, 'ingresos_totales': 61950.0}
+2026-07-20 20:07:55,985 | INFO | main | Métricas calculadas correctamente
+2026-07-20 20:07:55,985 | DEBUG | main | Métricas obtenidas: {'ventas_procesadas': 5, 'productos_diferentes': 4, 'unidades_vendidas': 15, 'ingresos_totales': 61950.0}
+2026-07-20 20:07:55,985 | INFO | reportes | Generando estructura del reporte
+2026-07-20 20:07:55,985 | DEBUG | reportes | Reporte generado: {'fecha_generacion': '2026-07-20T20:07:55.985690-06:00', 'metricas': {'ventas_procesadas': 5, 'productos_diferentes': 4, 'unidades_vendidas': 15, 'ingresos_totales': 61950.0}}
+2026-07-20 20:07:55,985 | INFO | reportes | Exportando reporte JSON: D:\Documentos\WorkSpaceServer\Capacitacion Python\cap.python\src\cap\python\basic\labio\datos\reporte.json
+2026-07-20 20:07:55,986 | INFO | reportes | Reporte exportado correctamente
+2026-07-20 20:07:55,986 | INFO | main | Reporte generado correctamente: D:\Documentos\WorkSpaceServer\Capacitacion Python\cap.python\src\cap\python\basic\labio\datos\reporte.json
+2026-07-20 20:07:55,986 | INFO | main | Fin del procesamiento
+2026-07-20 20:07:55,986 | INFO | main | =================================
