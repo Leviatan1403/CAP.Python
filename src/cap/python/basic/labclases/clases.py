@@ -1,18 +1,3 @@
-"""
-LABORATORIO
-Programación Orientada a Objetos + dataclasses + attrs + Pydantic
-
-Conceptos incluidos:
-- Clases
-- Herencia
-- Composición
-- Dunder Methods
-- dataclasses
-- attrs
-- Pydantic
-- Conversión entre DTO y entidades
-"""
-
 from __future__ import annotations
 
 from dataclasses import dataclass, field
@@ -28,12 +13,6 @@ from pydantic import BaseModel, ConfigDict, Field
 
 @define
 class Product:
-    """
-    Clase utilizando attrs.
-
-    Incluye validaciones automáticas.
-    """
-
     id: int
 
     name: str = attr_field(
@@ -102,12 +81,6 @@ class OrderItem:
 
 @dataclass(order=True)
 class Order:
-    """
-    Entidad del dominio.
-
-    order=True permite comparaciones.
-    """
-
     sort_index: float = field(init=False, repr=False)
 
     id: int
@@ -120,7 +93,7 @@ class Order:
 
     def __post_init__(self):
         if self.discount < 0:
-            raise ValueError("Discount cannot be negative")
+            raise ValueError("Descuento no puede ser negativo")
 
         self.sort_index = self.total
 

@@ -11,9 +11,6 @@ LOG_DIR = BASE_DIR / "logs"
 
 
 def configurar_logging() -> None:
-    """
-    Carga configuración de logging desde YAML.
-    """
 
     LOG_DIR.mkdir(
         parents=True,

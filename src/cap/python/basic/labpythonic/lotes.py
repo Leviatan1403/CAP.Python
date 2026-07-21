@@ -5,9 +5,6 @@ def generadorporlotes[T](
     iterable: list[T],
     tamano_lote: int,
 ) -> Iterator[list[T]]:
-    """
-    Agrupa un iterable en lotes (chunks) del tamaño especificado.
-    """
     lote = []
     for item in iterable:
         lote.append(item)

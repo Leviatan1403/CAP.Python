@@ -10,10 +10,6 @@ OUTPUT_FILE = DATA_DIR / "reporte.json"
 
 
 def validar_rutas() -> None:
-    """
-    Valida que existan las rutas necesarias
-    para ejecutar el procesamiento.
-    """
 
     if not DATA_DIR.exists():
         DATA_DIR.mkdir(parents=True)

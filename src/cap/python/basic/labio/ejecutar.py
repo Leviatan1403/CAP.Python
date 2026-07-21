@@ -1,10 +1,3 @@
-"""
-Script de automatización del procesamiento de ventas.
-
-Este módulo ejecuta la aplicación principal
-utilizando subprocess.
-"""
-
 import subprocess
 import sys
 from pathlib import Path
@@ -15,11 +8,6 @@ APP_FILE = BASE_DIR / "app" / "main.py"
 
 
 def ejecutar_proceso() -> int:
-    """
-    Ejecuta la aplicación principal
-    y devuelve el código de salida.
-    """
-
     print("Iniciando proceso automático...")
 
     try:
@@ -62,9 +50,6 @@ def ejecutar_proceso() -> int:
 
 
 def main() -> None:
-    """
-    Punto de entrada del script.
-    """
 
     codigo = ejecutar_proceso()
 
